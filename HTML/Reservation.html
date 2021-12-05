@@ -15,16 +15,40 @@
   <body>
     <div class="container">
       <div class="row text-center">
-        <h1>Gestion de Administradores</h1>
-        <a href="/Home.html">Regresar</a>
+        <h1>Gestion de Reservas</h1>
+        <a href="/HTML/Home.html">Regresar</a>
       </div>
       <br></br>
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <div class="card-header">Agregar Administradores</div>
+            <div class="card-header">Agregar Reservas</div>
             <div class="card-body">
               <div class="row">
+                <div class="col">
+                  <input
+                    type="date"
+                    name="startDate"
+                    id="startDate"
+                    placeholder="startDate"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="date"
+                    name="devolutionDate"
+                    id="devolutionDate"
+                    placeholder="devolutionDate"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="number"
+                    name="idClient"
+                    id="idClient"
+                    placeholder="idClient"
+                  />
+                </div>
                 <div class="col">
                   <input
                     type="number"
@@ -34,44 +58,20 @@
                   />
                 </div>
                 <div class="col">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="name"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    name="password"
-                    id="password"
-                    placeholder="password"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder="email"
-                  />
-                </div>
-                <div class="col">
                   <button
                     id="btnAgregar"
-                    onclick="agregarAdmin()"
+                    onclick="agregarReservation()"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Agregar Admin
+                    Agregar Reservation
                   </button>
                   <button
                     id="btnActualizar"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Actualizar Admin
+                    Actualizar Reservation
                   </button>
                 </div>
               </div>
@@ -88,9 +88,9 @@
                 id="btnObtenerProd"
                 type="button"
                 class="btn btn-primary"
-                onclick="obtenerAdmin()"
+                onclick="obtenerReservation()"
               >
-                Obtener Admin
+                Obtener Reservation
               </button>
             </div>
             <div class="col"></div>
@@ -109,7 +109,7 @@
                     id="btnBuscar"
                     type="button"
                     class="btn btn-primary"
-                    onclick="buscarAdmin()"
+                    onclick="buscarReservation()"
                   >
                     Buscar
                   </button>
@@ -120,7 +120,7 @@
           <br />
           <div class="row">
             <table
-              id="tablaAdmin"
+              id="tablaReservation"
               class="table table-primary text-center"
             ></table>
           </div>
@@ -134,5 +134,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="js/Admin.js"></script>
+  <script src="js/Reservation.js"></script>
 </html>

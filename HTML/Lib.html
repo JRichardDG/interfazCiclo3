@@ -15,58 +15,72 @@
   <body>
     <div class="container">
       <div class="row text-center">
-        <h1>Gestion de Mensajes</h1>
-        <a href="/Home.html">Regresar</a>
+        <h1>Gestion de Bibliotecas</h1>
+        <a href="/HTML/Home.html">Regresar</a>
       </div>
       <br></br>
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <div class="card-header">Agregar Mensajes</div>
+            <div class="card-header">Agregar Lib</div>
             <div class="card-body">
               <div class="row">
                 <div class="col">
                   <input
-                    type="number"
-                    name="messageText"
-                    id="messageText"
-                    placeholder="messageText"
+                    type="text"
+                    name="target"
+                    id="target"
+                    placeholder="target"
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    name="client"
-                    id="client"
-                    placeholder="client"
+                    name="capacity"
+                    id="capacity"
+                    placeholder="capacity"
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    name="lib"
-                    id="lib"
-                    placeholder="lib"
+                    name="category"
+                    id="category"
+                    placeholder="category"
                   />
                 </div>
                 <div class="col">
-
-                </div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="name"
+                    />
+                  </div>
+                <div class="col">
+                    <input
+                      type="text"
+                      name="description"
+                      id="description"
+                      placeholder="description"
+                    />
+                  </div>  
                 <div class="col">
                   <button
                     id="btnAgregar"
-                    onclick="agregarMessage()"
+                    onclick="agregarLib()"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Agregar Message
+
+                  Agregar Lib
                   </button>
                   <button
                     id="btnActualizar"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Actualizar Message
+                    Actualizar Lib
                   </button>
                 </div>
               </div>
@@ -83,9 +97,9 @@
                 id="btnObtenerProd"
                 type="button"
                 class="btn btn-primary"
-                onclick="obtenerMessage()"
+                onclick="obtenerLib()"
               >
-                Obtener Message
+                Obtener Lib
               </button>
             </div>
             <div class="col"></div>
@@ -104,7 +118,7 @@
                     id="btnBuscar"
                     type="button"
                     class="btn btn-primary"
-                    onclick="buscarMessage()"
+                    onclick="buscarLib()"
                   >
                     Buscar
                   </button>
@@ -115,7 +129,7 @@
           <br />
           <div class="row">
             <table
-              id="tablaMessage"
+              id="tablaLib"
               class="table table-primary text-center"
             ></table>
           </div>
@@ -129,5 +143,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="js/Message.js"></script>
+  <script src="js/Lib.js"></script>
 </html>

@@ -1,4 +1,4 @@
-const baseUrl = "http://150.230.70.76:8080";
+const baseUrl = "http://150.230.43.112:8080";
 const path = "/api/Message";
 let Message = [];
 

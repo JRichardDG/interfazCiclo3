@@ -15,63 +15,49 @@
   <body>
     <div class="container">
       <div class="row text-center">
-        <h1>Gestion de Reservas</h1>
-        <a href="/Home.html">Regresar</a>
+        <h1>Gestion de Categorias</h1>
+        <a href="/HTML/Home.html">Regresar</a>
       </div>
       <br></br>
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <div class="card-header">Agregar Reservas</div>
+            <div class="card-header">Agregar Categorias</div>
             <div class="card-body">
               <div class="row">
                 <div class="col">
                   <input
-                    type="date"
-                    name="startDate"
-                    id="startDate"
-                    placeholder="startDate"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="name"
                   />
                 </div>
                 <div class="col">
                   <input
-                    type="date"
-                    name="devolutionDate"
-                    id="devolutionDate"
-                    placeholder="devolutionDate"
+                    type="text"
+                    name="description"
+                    id="description"
+                    placeholder="description"
                   />
                 </div>
                 <div class="col">
-                  <input
-                    type="number"
-                    name="idClient"
-                    id="idClient"
-                    placeholder="idClient"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="number"
-                    name="id"
-                    id="id"
-                    placeholder="id"
-                  />
                 </div>
                 <div class="col">
                   <button
                     id="btnAgregar"
-                    onclick="agregarReservation()"
+                    onclick="agregarCategory()"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Agregar Reservation
+                    Agregar Category
                   </button>
                   <button
                     id="btnActualizar"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Actualizar Reservation
+                    Actualizar Category
                   </button>
                 </div>
               </div>
@@ -88,9 +74,9 @@
                 id="btnObtenerProd"
                 type="button"
                 class="btn btn-primary"
-                onclick="obtenerReservation()"
+                onclick="obtenerCategory()"
               >
-                Obtener Reservation
+                Obtener Category
               </button>
             </div>
             <div class="col"></div>
@@ -109,7 +95,7 @@
                     id="btnBuscar"
                     type="button"
                     class="btn btn-primary"
-                    onclick="buscarReservation()"
+                    onclick="buscarCategory()"
                   >
                     Buscar
                   </button>
@@ -120,7 +106,7 @@
           <br />
           <div class="row">
             <table
-              id="tablaReservation"
+              id="tablaCategory"
               class="table table-primary text-center"
             ></table>
           </div>
@@ -134,5 +120,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="js/Reservation.js"></script>
+  <script src="js/Category.js"></script>
 </html>

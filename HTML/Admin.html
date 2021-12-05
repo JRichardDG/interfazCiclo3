@@ -15,72 +15,63 @@
   <body>
     <div class="container">
       <div class="row text-center">
-        <h1>Gestion de Bibliotecas</h1>
-        <a href="/Home.html">Regresar</a>
+        <h1>Gestion de Administradores</h1>
+        <a href="/HTML/Home.html">Regresar</a>
       </div>
       <br></br>
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <div class="card-header">Agregar Lib</div>
+            <div class="card-header">Agregar Administradores</div>
             <div class="card-body">
               <div class="row">
                 <div class="col">
                   <input
-                    type="text"
-                    name="target"
-                    id="target"
-                    placeholder="target"
+                    type="number"
+                    name="id"
+                    id="id"
+                    placeholder="id"
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    name="capacity"
-                    id="capacity"
-                    placeholder="capacity"
+                    name="name"
+                    id="name"
+                    placeholder="name"
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    name="category"
-                    id="category"
-                    placeholder="category"
+                    name="password"
+                    id="password"
+                    placeholder="password"
                   />
                 </div>
                 <div class="col">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="name"
-                    />
-                  </div>
-                <div class="col">
-                    <input
-                      type="text"
-                      name="description"
-                      id="description"
-                      placeholder="description"
-                    />
-                  </div>  
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="email"
+                  />
+                </div>
                 <div class="col">
                   <button
                     id="btnAgregar"
-                    onclick="agregarLib()"
+                    onclick="agregarAdmin()"
                     type="button"
                     class="btn btn-primary"
                   >
-
-                  Agregar Lib
+                    Agregar Admin
                   </button>
                   <button
                     id="btnActualizar"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Actualizar Lib
+                    Actualizar Admin
                   </button>
                 </div>
               </div>
@@ -97,9 +88,9 @@
                 id="btnObtenerProd"
                 type="button"
                 class="btn btn-primary"
-                onclick="obtenerLib()"
+                onclick="obtenerAdmin()"
               >
-                Obtener Lib
+                Obtener Admin
               </button>
             </div>
             <div class="col"></div>
@@ -118,7 +109,7 @@
                     id="btnBuscar"
                     type="button"
                     class="btn btn-primary"
-                    onclick="buscarLib()"
+                    onclick="buscarAdmin()"
                   >
                     Buscar
                   </button>
@@ -129,7 +120,7 @@
           <br />
           <div class="row">
             <table
-              id="tablaLib"
+              id="tablaAdmin"
               class="table table-primary text-center"
             ></table>
           </div>
@@ -143,5 +134,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="js/Lib.js"></script>
+  <script src="js/Admin.js"></script>
 </html>

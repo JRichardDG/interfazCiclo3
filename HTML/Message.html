@@ -15,49 +15,58 @@
   <body>
     <div class="container">
       <div class="row text-center">
-        <h1>Gestion de Categorias</h1>
-        <a href="/Home.html">Regresar</a>
+        <h1>Gestion de Mensajes</h1>
+        <a href="/HTML/Home.html">Regresar</a>
       </div>
       <br></br>
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <div class="card-header">Agregar Categorias</div>
+            <div class="card-header">Agregar Mensajes</div>
             <div class="card-body">
               <div class="row">
                 <div class="col">
                   <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="name"
+                    type="number"
+                    name="messageText"
+                    id="messageText"
+                    placeholder="messageText"
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    name="description"
-                    id="description"
-                    placeholder="description"
+                    name="client"
+                    id="client"
+                    placeholder="client"
                   />
                 </div>
                 <div class="col">
+                  <input
+                    type="text"
+                    name="lib"
+                    id="lib"
+                    placeholder="lib"
+                  />
+                </div>
+                <div class="col">
+
                 </div>
                 <div class="col">
                   <button
                     id="btnAgregar"
-                    onclick="agregarCategory()"
+                    onclick="agregarMessage()"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Agregar Category
+                    Agregar Message
                   </button>
                   <button
                     id="btnActualizar"
                     type="button"
                     class="btn btn-primary"
                   >
-                    Actualizar Category
+                    Actualizar Message
                   </button>
                 </div>
               </div>
@@ -74,9 +83,9 @@
                 id="btnObtenerProd"
                 type="button"
                 class="btn btn-primary"
-                onclick="obtenerCategory()"
+                onclick="obtenerMessage()"
               >
-                Obtener Category
+                Obtener Message
               </button>
             </div>
             <div class="col"></div>
@@ -95,7 +104,7 @@
                     id="btnBuscar"
                     type="button"
                     class="btn btn-primary"
-                    onclick="buscarCategory()"
+                    onclick="buscarMessage()"
                   >
                     Buscar
                   </button>
@@ -106,7 +115,7 @@
           <br />
           <div class="row">
             <table
-              id="tablaCategory"
+              id="tablaMessage"
               class="table table-primary text-center"
             ></table>
           </div>
@@ -120,5 +129,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="js/Category.js"></script>
+  <script src="js/Message.js"></script>
 </html>
